@@ -15,6 +15,7 @@
 		776C04442A7A61DA00D099AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 776C04432A7A61DA00D099AD /* Assets.xcassets */; };
 		776C04472A7A61DA00D099AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 776C04452A7A61DA00D099AD /* LaunchScreen.storyboard */; };
 		776C04502A7A64B100D099AD /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776C044F2A7A64B100D099AD /* TaskViewController.swift */; };
+		776C04522A7A6C8000D099AD /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776C04512A7A6C8000D099AD /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		776C04462A7A61DA00D099AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		776C04482A7A61DA00D099AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		776C044F2A7A64B100D099AD /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
+		776C04512A7A6C8000D099AD /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				776C044E2A7A61EE00D099AD /* App */,
 				776C043B2A7A61D900D099AD /* ViewController.swift */,
 				776C044F2A7A64B100D099AD /* TaskViewController.swift */,
+				776C04512A7A6C8000D099AD /* TableViewCell.swift */,
 				776C043D2A7A61D900D099AD /* Main.storyboard */,
 				776C04432A7A61DA00D099AD /* Assets.xcassets */,
 				776C04452A7A61DA00D099AD /* LaunchScreen.storyboard */,
@@ -155,6 +158,7 @@
 				776C043C2A7A61D900D099AD /* ViewController.swift in Sources */,
 				776C04382A7A61D900D099AD /* AppDelegate.swift in Sources */,
 				776C04502A7A64B100D099AD /* TaskViewController.swift in Sources */,
+				776C04522A7A6C8000D099AD /* TableViewCell.swift in Sources */,
 				776C043A2A7A61D900D099AD /* SceneDelegate.swift in Sources */,
 				776C04422A7A61D900D099AD /* WhatToDo.xcdatamodeld in Sources */,
 			);

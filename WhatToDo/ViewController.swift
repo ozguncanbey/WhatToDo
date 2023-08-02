@@ -42,8 +42,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        cell.textLabel?.text = ""
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! TableViewCell
         return cell
     }
     
