@@ -14,6 +14,7 @@
 		776C04422A7A61D900D099AD /* WhatToDo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 776C04402A7A61D900D099AD /* WhatToDo.xcdatamodeld */; };
 		776C04442A7A61DA00D099AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 776C04432A7A61DA00D099AD /* Assets.xcassets */; };
 		776C04472A7A61DA00D099AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 776C04452A7A61DA00D099AD /* LaunchScreen.storyboard */; };
+		776C04502A7A64B100D099AD /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776C044F2A7A64B100D099AD /* TaskViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		776C04432A7A61DA00D099AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		776C04462A7A61DA00D099AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		776C04482A7A61DA00D099AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		776C044F2A7A64B100D099AD /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +60,9 @@
 		776C04362A7A61D900D099AD /* WhatToDo */ = {
 			isa = PBXGroup;
 			children = (
-				776C04372A7A61D900D099AD /* AppDelegate.swift */,
-				776C04392A7A61D900D099AD /* SceneDelegate.swift */,
+				776C044E2A7A61EE00D099AD /* App */,
 				776C043B2A7A61D900D099AD /* ViewController.swift */,
+				776C044F2A7A64B100D099AD /* TaskViewController.swift */,
 				776C043D2A7A61D900D099AD /* Main.storyboard */,
 				776C04432A7A61DA00D099AD /* Assets.xcassets */,
 				776C04452A7A61DA00D099AD /* LaunchScreen.storyboard */,
@@ -68,6 +70,15 @@
 				776C04402A7A61D900D099AD /* WhatToDo.xcdatamodeld */,
 			);
 			path = WhatToDo;
+			sourceTree = "<group>";
+		};
+		776C044E2A7A61EE00D099AD /* App */ = {
+			isa = PBXGroup;
+			children = (
+				776C04372A7A61D900D099AD /* AppDelegate.swift */,
+				776C04392A7A61D900D099AD /* SceneDelegate.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +154,7 @@
 			files = (
 				776C043C2A7A61D900D099AD /* ViewController.swift in Sources */,
 				776C04382A7A61D900D099AD /* AppDelegate.swift in Sources */,
+				776C04502A7A64B100D099AD /* TaskViewController.swift in Sources */,
 				776C043A2A7A61D900D099AD /* SceneDelegate.swift in Sources */,
 				776C04422A7A61D900D099AD /* WhatToDo.xcdatamodeld in Sources */,
 			);
