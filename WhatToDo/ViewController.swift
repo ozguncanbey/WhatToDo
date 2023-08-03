@@ -30,14 +30,14 @@ class ViewController: UIViewController {
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(closeKeyboard))
         view.addGestureRecognizer(gestureRecognizer)
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! TableViewCell
-        
-        cell.checkedImageView.isUserInteractionEnabled = true
-        let checkedGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(checked))
-        cell.addGestureRecognizer(checkedGestureRecognizer)
-
-        cell.checkedImageView.image = checked()
-        
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! TableViewCell
+//
+//        cell.checkedImageView.isUserInteractionEnabled = true
+//        let checkedGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(checked))
+//        cell.addGestureRecognizer(checkedGestureRecognizer)
+//
+//        cell.checkedImageView.image = checked()
+//
         getDatas()
     }
     
@@ -45,16 +45,15 @@ class ViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(getDatas), name: NSNotification.Name("saved"), object: nil)
     }
     
-    @objc func checked() -> UIImage {
-        isChecked.toggle()
-
-        if isChecked {
-            return UIImage(named: "circle.fill")!
-        } else {
-            return UIImage(named: "circle")!
-        }
-    }
-    
+//    @objc func checked() -> UIImage {
+//        isChecked.toggle()
+//
+//        if isChecked {
+//            return UIImage(named: "circle.fill")!
+//        } else {
+//            return UIImage(named: "circle")!
+//        }
+//    }
     
     @objc func addButtonTapped() {
         performSegue(withIdentifier: "toTaskVC", sender: self)
