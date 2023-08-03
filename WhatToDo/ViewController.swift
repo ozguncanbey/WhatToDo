@@ -30,12 +30,31 @@ class ViewController: UIViewController {
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(closeKeyboard))
         view.addGestureRecognizer(gestureRecognizer)
         
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! TableViewCell
+        
+        cell.checkedImageView.isUserInteractionEnabled = true
+        let checkedGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(checked))
+        cell.addGestureRecognizer(checkedGestureRecognizer)
+
+        cell.checkedImageView.image = checked()
+        
         getDatas()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         NotificationCenter.default.addObserver(self, selector: #selector(getDatas), name: NSNotification.Name("saved"), object: nil)
     }
+    
+    @objc func checked() -> UIImage {
+        isChecked.toggle()
+
+        if isChecked {
+            return UIImage(named: "circle.fill")!
+        } else {
+            return UIImage(named: "circle")!
+        }
+    }
+    
     
     @objc func addButtonTapped() {
         performSegue(withIdentifier: "toTaskVC", sender: self)
@@ -88,6 +107,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! TableViewCell
+        
         cell.taskLabel.text = contentArray[indexPath.row]
         
         if priorityArray[indexPath.row] == "low" {
@@ -98,23 +118,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             cell.priorityImageView.tintColor = UIColor(named: "high")
         }
         
-        cell.checkedImageView.isUserInteractionEnabled = true
-        let checkedGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(checked))
-        cell.addGestureRecognizer(checkedGestureRecognizer)
-
-        cell.checkedImageView.image = checked()
-
         return cell
-    }
-    
-    @objc func checked() -> UIImage {
-        isChecked.toggle()
-
-        if isChecked {
-            return UIImage(named: "circle.fill")!
-        } else {
-            return UIImage(named: "circle")!
-        }
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
