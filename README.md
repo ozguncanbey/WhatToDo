@@ -9,9 +9,9 @@ WhatToDo is a task manager app that helps you keep track of your to-do list. Wit
 - Save tasks for future reference and organization.
 
 ## Screenshots
-*
-*
-*
+* (https://github.com/ozguncanbey/WhatToDo/assets/138692325/a67869fa-07ea-48f2-b2d9-164f0b00a1bc)
+* (https://github.com/ozguncanbey/WhatToDo/assets/138692325/bff1dafe-0f3d-49f5-b7a5-d6cd95c6952d)
+* (https://github.com/ozguncanbey/WhatToDo/assets/138692325/1e01dce6-fe17-470a-9fe3-01b5aa15ca2a)
 
 ## How to Use
 1. Launch the app on your device.
